@@ -1,0 +1,6 @@
+framework module Pods_IntShopDriver {
+  umbrella header "Pods-IntShopDriver-umbrella.h"
+
+  export *
+  module * { export * }
+}

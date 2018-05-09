@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="weekly" id="gTV-IL-0wX" customClass="WeeklyCell" customModule="IntShopDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3A-KD-Xao">
+                        <rect key="frame" x="8" y="34" width="110" height="25"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3p-rf-8Xn">
+                                <rect key="frame" x="4" y="3" width="102" height="19"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="keY-17-fO8"/>
+                                    <constraint firstAttribute="height" constant="19" id="v0K-3L-CPu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r3p-rf-8Xn" firstAttribute="centerX" secondItem="h3A-KD-Xao" secondAttribute="centerX" id="2Ic-Tv-REz"/>
+                            <constraint firstAttribute="width" constant="110" id="Gnu-w7-AZk"/>
+                            <constraint firstAttribute="height" constant="25" id="PdG-oF-Hgi"/>
+                            <constraint firstItem="r3p-rf-8Xn" firstAttribute="centerY" secondItem="h3A-KD-Xao" secondAttribute="centerY" id="ug7-iu-e4u"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rli-4F-IAS">
+                        <rect key="frame" x="41" y="7" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="1o2-mm-msl"/>
+                            <constraint firstAttribute="height" constant="21" id="jRE-Bf-YPQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 - 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgg-Dk-Xgp">
+                        <rect key="frame" x="26" y="59" width="73" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="cWL-Vi-MJ0"/>
+                            <constraint firstAttribute="height" constant="21" id="qxt-h6-Qp8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Rli-4F-IAS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="G3E-dt-8sr"/>
+                <constraint firstItem="h3A-KD-Xao" firstAttribute="top" secondItem="Rli-4F-IAS" secondAttribute="bottom" constant="6" id="Pgc-NC-rtr"/>
+                <constraint firstItem="fgg-Dk-Xgp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cEw-z9-Lmw"/>
+                <constraint firstItem="h3A-KD-Xao" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cic-sv-bJL"/>
+                <constraint firstItem="fgg-Dk-Xgp" firstAttribute="top" secondItem="h3A-KD-Xao" secondAttribute="bottom" id="cj1-V2-8M7"/>
+                <constraint firstItem="Rli-4F-IAS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fhq-D2-eKr"/>
+            </constraints>
+            <size key="customSize" width="125" height="80"/>
+            <connections>
+                <outlet property="month" destination="Rli-4F-IAS" id="4mP-v2-eNm"/>
+                <outlet property="subView" destination="r3p-rf-8Xn" id="v2x-ha-liU"/>
+                <outlet property="superView" destination="h3A-KD-Xao" id="ubz-7w-HK4"/>
+                <outlet property="weekly" destination="fgg-Dk-Xgp" id="7k4-39-qPW"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>
